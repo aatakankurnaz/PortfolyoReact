@@ -62,3 +62,33 @@ a {
   background-color: #3730A3;
   
 }
+
+h2 {
+  color:#4338CA !important;
+}
+
+p {
+  color: #6B7280;
+}
+hr {
+  color: #3730A3 !important;
+}
+
+h1{
+  font-size:48px !important;
+}
+
+.props{
+  border: 2px solid #3730A3;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 18px;
+  padding-left: 18px;
+  border-radius: 8px;
+}
+
+.a2 {
+  text-decoration-line: underline !important;
+  color: #3730A3 !important;
+  font-weight: 600 !important;
+}

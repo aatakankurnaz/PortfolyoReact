@@ -11,15 +11,17 @@ function App() {
 
   return (
     <>
-      <div className='max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 flex flex-col gap-5'>
+      <div className='max-w-screen-xl mx-auto px-20 mt-4 flex flex-col gap-5'>
         <DarkModeAndLanguage />
         <NavBar />
         <MainInformation />
         <Skills />
         <Profile />
         <Projects />
+        
         </div>
         <Footer />
+        
     </>
   )
 }

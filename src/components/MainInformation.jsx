@@ -3,7 +3,7 @@ export const MainInformation = () => {
         <div className="flex justify-between">
             <div className="flex flex-col justify-between">
                 <div className="flex gap-3 items-center">
-                    <hr className="w-24 !text-[#3730A3] !border-t-2 !opacity-60 rounded-xl" />
+                    <hr className="w-24 !border-t-2 !opacity-60 rounded-xl" />
                     <p className="my-auto text-[#4338CA] font-medium text-xl">Atakan Kurnaz</p>
                 </div>
                 <div>
@@ -11,7 +11,7 @@ export const MainInformation = () => {
                         Minimalism lover</h1>
                 </div>
                 <div>
-                    <p className="font-normal text-lg leading-[28px] text-[#6B7280]">Hi, I’m Atakan. I’m a full-stack developer.
+                    <p className="font-normal text-lg leading-[28px]">Hi, I’m Atakan. I’m a full-stack developer.
                         If you are looking for a <br />Developer who to craft solid and scalable frontend
                         products with <br />great user experiences. Let’s shake hands with me.</p>
                 </div>
