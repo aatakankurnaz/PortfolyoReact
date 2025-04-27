@@ -1,3 +1,8 @@
+import CvResim from "../assets/107975 -1.JPG"
+import LinkedinP from "../assets/LinkedIn.svg"
+import GithubP from "../assets/github.svg"
+
+
 export const MainInformation = () => {
     return (
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16">
@@ -32,14 +37,14 @@ export const MainInformation = () => {
             </a>
   
             <div className="flex gap-2 items-center nav-bar-links-2 px-4 py-2">
-              <img src="src/assets/github.svg" alt="Github" className="w-5 h-5" />
+              <img src={GithubP} alt="Github" className="w-5 h-5" />
               <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-[#3730A3] text-sm sm:text-base">
                 Github
               </a>
             </div>
   
             <div className="flex gap-2 items-center nav-bar-links-2 px-4 py-2">
-              <img src="src/assets/LinkedIn.svg" alt="LinkedIn" className="w-5 h-5" />
+              <img src={LinkedinP} alt="LinkedIn" className="w-5 h-5" />
               <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-[#3730A3] text-sm sm:text-base">
                 Linkedin
               </a>
@@ -48,7 +53,7 @@ export const MainInformation = () => {
         </div>
   
         {/* Profil resmi */}
-        <img src="src/assets/107975 -1.JPG" alt="Profile" className="w-full max-w-xs md:max-w-sm rounded-2xl object-cover" />
+        <img src={CvResim} alt="Profile" className="w-full max-w-xs md:max-w-sm rounded-2xl object-cover" />
       </div>
     )
   }

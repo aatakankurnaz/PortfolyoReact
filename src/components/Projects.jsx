@@ -1,3 +1,5 @@
+import ProjectP from "../assets/ProjectPhoto.png"
+
 export const Projects = () => {
     return (
       <div className="flex flex-col gap-8 mb-10">
@@ -9,7 +11,7 @@ export const Projects = () => {
           {[1, 2, 3].map((_, index) => (
             <div key={index} className="flex flex-col gap-4 p-4 rounded-xl shadow-md flex-1">
               {/* Bak burada artık flex-1 ekledik! */}
-              <img src="src/assets/ad5081bf69bb4825e42350e768340fdbec09d78b.png" alt="project" className="rounded-lg w-full h-auto" />
+              <img src={ProjectP} alt="project" className="rounded-lg w-full h-auto" />
               <h2 className="text-xl font-semibold text-[#222]">Proje</h2>
               <p className="text-sm text-gray-600 leading-relaxed">
                 A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.
