@@ -1,11 +1,13 @@
 import './App.css'
 import { DarkModeAndLanguage } from './components/DarkModeAndLanguage'
-import { Footer } from './components/Footer'
-import { MainInformation } from './components/mainInformation'
-import { NavBar } from './components/navBar'
-import { Profile } from './components/profile'
+import { MainInformation } from './components/MainInformation'
+import { NavBar } from './components/NNavBar'
+import { Skills } from './components/Skills'
+import { Profile } from './components/Profile'
 import { Projects } from './components/Projects'
-import { Skills } from './components/skills'
+import { Footer } from './components/Footer'  
+
+
 
 function App() {
   return (
