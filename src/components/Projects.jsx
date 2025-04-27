@@ -1,51 +1,39 @@
 export const Projects = () => {
     return (
-        <div className="flex flex-col gap-4 mb-5">
-            <h1>Projects</h1>
-            <div className="flex justify-between gap-10">
-                <div className="flex flex-col gap-2">
-                    <img src="src/assets/ad5081bf69bb4825e42350e768340fdbec09d78b.png" alt="" width="300" />
-                    <h2>Proje</h2>
-                    <p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
-                    <div className="flex gap-2">
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                    </div>
-                    <div className="flex justify-between">
-                        <a href="" className="a2">Github</a>
-                        <a href="" className="a2">View Site</a>
-                    </div>
-                </div>
-                <div div className="flex flex-col gap-2">
-                    <img src="src/assets/ad5081bf69bb4825e42350e768340fdbec09d78b.png" alt="" width="300" />
-                    <h2>Proje</h2>
-                    <p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
-                    <div className="flex gap-2">
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                    </div>
-                    <div className="flex justify-between">
-                        <a href="" className="a2">Github</a>
-                        <a href="" className="a2">View Site</a>
-                    </div>
-                </div>
-                <div div className="flex flex-col gap-2">
-                    <img src="src/assets/ad5081bf69bb4825e42350e768340fdbec09d78b.png" alt="" width="300" />
-                    <h2>Proje</h2>
-                    <p>A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.</p>
-                    <div className="flex gap-2">
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                        <p className="props">react</p>
-                    </div>
-                    <div className="flex justify-between">
-                        <a href="" className="a2">Github</a>
-                        <a href="" className="a2">View Site</a>
-                    </div>
-                </div>
+      <div className="flex flex-col gap-8 mb-10">
+        {/* Başlık */}
+        <h1 className="text-2xl md:text-3xl font-bold text-[#4338CA]">Projects</h1>
+  
+        {/* Projeler */}
+        <div className="flex flex-col md:flex-row gap-10">
+          {[1, 2, 3].map((_, index) => (
+            <div key={index} className="flex flex-col gap-4 p-4 rounded-xl shadow-md flex-1">
+              {/* Bak burada artık flex-1 ekledik! */}
+              <img src="src/assets/ad5081bf69bb4825e42350e768340fdbec09d78b.png" alt="project" className="rounded-lg w-full h-auto" />
+              <h2 className="text-xl font-semibold text-[#222]">Proje</h2>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.
+                This was created with vanilla JS, SCSS and Parcel Bundler.
+              </p>
+  
+              {/* Etiketler */}
+              <div className="flex flex-wrap gap-2 mt-2">
+                {["React", "SCSS", "Parcel"].map((tech, idx) => (
+                  <span key={idx} className="bg-purple-100 text-purple-700 px-2 py-1 rounded-full text-xs font-medium">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+  
+              {/* Butonlar */}
+              <div className="flex justify-between mt-4">
+                <a href="#" className="text-indigo-600 font-semibold hover:underline text-sm">Github</a>
+                <a href="#" className="text-indigo-600 font-semibold hover:underline text-sm">View Site</a>
+              </div>
             </div>
+          ))}
         </div>
-    )
-}
+      </div>
+    );
+  }
+  
