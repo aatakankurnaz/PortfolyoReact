@@ -5,7 +5,7 @@ import GithubP from "../assets/github.svg"
 export const MainInformation = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 w-full">
         <div className="flex gap-3 items-center">
           <hr className="w-16 md:w-24 border-t-2 opacity-60 rounded-xl" />
           <p className="text-[#4338CA] font-medium text-lg md:text-xl">Atakan Kurnaz</p>
@@ -29,7 +29,7 @@ export const MainInformation = () => {
         <nav className="flex flex-wrap gap-4">
           <a 
             href="#contact" 
-            className="nav-bar-links-3 flex items-center justify-center px-6 py-3 text-sm sm:text-base whitespace-nowrap"
+            className="nav-bar-links-3 flex items-center justify-center px-4 py-2 text-sm sm:text-base whitespace-nowrap min-w-[140px] sm:min-w-[160px] rounded-lg"
           >
             Hire Me
           </a>
@@ -38,7 +38,7 @@ export const MainInformation = () => {
             href="https://github.com/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 px-6 py-3 !text-[#3730A3] text-sm sm:text-base border !border-current rounded-lg"
+            className="flex items-center justify-center gap-2 px-4 py-2 text-[#3730A3] text-sm sm:text-base border border-[#3730A3] rounded-lg min-w-[140px] sm:min-w-[160px]"
           >
             <img src={GithubP} alt="Github" className="w-5 h-5" />
             Github
@@ -48,7 +48,7 @@ export const MainInformation = () => {
             href="https://linkedin.com/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 px-6 py-3 !text-[#3730A3] text-sm sm:text-base border !border-current rounded-lg"
+            className="flex items-center justify-center gap-2 px-4 py-2 text-[#3730A3] text-sm sm:text-base border border-[#3730A3] rounded-lg min-w-[140px] sm:min-w-[160px]"
           >
             <img src={LinkedinP} alt="LinkedIn" className="w-5 h-5" />
             Linkedin
