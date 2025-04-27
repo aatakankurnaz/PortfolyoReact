@@ -2,7 +2,7 @@ import { Form } from "react-bootstrap"
 
 export const DarkModeAndLanguage = () => {
   return (
-    <div className="flex flex-wrap gap-2 sm:gap-3 justify-end sm:justify-end items-center text-sm sm:text-base">
+    <div className="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-3 justify-end items-center text-sm sm:text-base">
       <Form>
         <div className="flex items-center gap-2 sm:gap-3">
           <Form.Check
@@ -20,12 +20,10 @@ export const DarkModeAndLanguage = () => {
         </div>
       </Form>
 
-      {/* Orta çizgi */}
       <span className="inter text-[#777777] font-bold hidden sm:inline">
         |
       </span>
 
-      {/* Dil değişimi */}
       <div className="flex items-center gap-1">
         <button className="inter font-bold text-[#4731D3] tracking-widest text-sm sm:text-base">
           TÜRKÇE
