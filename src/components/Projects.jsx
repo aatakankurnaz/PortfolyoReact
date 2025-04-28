@@ -23,9 +23,9 @@ export const Projects = () => {
                 ))}
               </div>
   
-              <div className="flex justify-between mt-4">
-                <a href="#" className="text-indigo-600 font-semibold hover:underline text-sm">Github</a>
-                <a href="#" className="text-indigo-600 font-semibold hover:underline text-sm">View Site</a>
+              <div className="flex justify-between mt-4 text-indigo-600 dark:text-[#E1E1FF]">
+                <a href="#" className=" font-semibold hover:underline text-sm">Github</a>
+                <a href="#" className="font-semibold hover:underline text-sm">View Site</a>
               </div>
             </div>
           ))}
