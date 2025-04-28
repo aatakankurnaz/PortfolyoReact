@@ -1,6 +1,9 @@
+import { useSelector } from "react-redux";
 import CvResim from "../assets/107975 -1.JPG"
+import { texts } from "../store/texts";
 
 export const MainInformation = () => {
+  const lang = useSelector((state) => state.language.language);
   return (
     <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-8 md:gap-16">
       <div className="flex flex-col gap-6 w-full">
@@ -10,17 +13,14 @@ export const MainInformation = () => {
         </div>
 
         <div>
-          <h1 className="dark:text-[#AEBCCF] font-bold text-4xl sm:text-5xl md:text-6xl leading-tight">
-            Creative thinker <br />
-            Minimalism lover
+          <h1 className="dark:text-[#AEBCCF] font-bold text-4xl sm:text-5xl md:text-6xl leading-tight ">
+            {texts[lang].mainP}
           </h1>
         </div>
 
         <div>
           <p className=" font-normal text-base md:text-lg leading-relaxed text-gray-600">
-            Hi, I’m Atakan. I’m a full-stack developer.
-            If you are looking for a developer who can craft solid and scalable frontend
-            products with great user experiences, let’s shake hands with me.
+          {texts[lang].mainP2}
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export const MainInformation = () => {
             href="#contact"
             className="dark:bg-[#E1E1FF] dark:text-black border text-white bg-[#3730A3] flex items-center justify-center px-4 py-2 text-sm sm:text-base whitespace-nowrap min-w-[140px] sm:min-w-[160px] rounded-lg"
           >
-            Hire Me
+            {texts[lang].hireMe}
           </a>
 
           <a

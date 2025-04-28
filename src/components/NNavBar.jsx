@@ -1,6 +1,9 @@
-import Logo from "../assets/Ellipse 9.svg"
+import { useSelector } from "react-redux";
+import { texts } from "../store/texts";
 
 export const NavBar = () => {
+  const lang = useSelector((state) => state.language.language);
+
   return (
     <nav className="flex justify-between w-full items-center py-2">
       <svg
@@ -34,10 +37,31 @@ export const NavBar = () => {
       </svg>
 
       <ul className="flex ml-auto gap-8 sm:gap-20">
-        <li><a href="#skills" className="text-[#6B7280] text-lg font-medium text-sm sm:text-base">Skills</a></li>
-        <li><a href="#projects" className=" text-[#6B7280] text-lg font-medium text-sm sm:text-base">Projects</a></li>
-        <li><a href="#contact" className="dark:bg-white border px-7 py-3 rounded-md text-[#3730A3] text-lg font-medium text-sm sm:text-base whitespace-nowrap">Hire me</a></li>
+        <li>
+          <a
+            href="#skills"
+            className="text-[#6B7280] text-lg font-medium text-sm sm:text-base"
+          >
+            {texts[lang].skills}
+          </a>
+        </li>
+        <li>
+          <a
+            href="#projects"
+            className="text-[#6B7280] text-lg font-medium text-sm sm:text-base"
+          >
+            {texts[lang].projects}
+          </a>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            className="dark:bg-white border px-7 py-3 rounded-md text-[#3730A3] text-lg font-medium text-sm sm:text-base whitespace-nowrap"
+          >
+            {texts[lang].hireMe}
+          </a>
+        </li>
       </ul>
     </nav>
-  )
-}
+  );
+};

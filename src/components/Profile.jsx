@@ -1,37 +1,41 @@
+import { useSelector } from "react-redux";
+import { texts } from "../store/texts";
+
 export const Profile = () => {
+  const lang = useSelector((state) => state.language.language);
     return (
       <div className="flex flex-col gap-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-[#4338CA]">Profile</h1>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#4338CA]">{texts[lang].profile}</h1>
   
         <div className="flex flex-col md:flex-row gap-10 md:gap-20">
           <div className="flex flex-col gap-4 flex-1">
-            <h2 className="text-xl md:text-2xl font-semibold text-[#222]">Profile</h2>
+            <h2 className="text-xl md:text-2xl font-semibold text-[#222]">{texts[lang].profile}</h2>
             <div className="flex gap-8">
-              <div className="flex flex-col gap-2 text-sm md:text-base">
-                <p className="font-bold text-black">Doğum Tarihi</p>
-                <p className="font-bold text-black">İkamet Şehri</p>
-                <p className="font-bold text-black">Eğitim Durumu</p>
-                <p className="font-bold text-black">Tercih Ettiği Rol</p>
+              <div className="flex flex-col gap-4 text-sm md:text-base">
+                <p className="font-bold text-black">{texts[lang].birth}</p>
+                <p className="font-bold text-black">{texts[lang].place}</p>
+                <p className="font-bold text-black">{texts[lang].edu}</p>
+                <p className="font-bold text-black">{texts[lang].prefer}</p>
               </div>
   
-              <div className="flex flex-col text-sm md:text-base">
+              <div className="flex flex-col text-sm md:text-base gap-2">
                 <p className="text-black">18.07.1994</p>
-                <p className="text-black">Trabzon</p>
-                <p className="text-black">
-                  Kocaeli Ünv. Kamu Yönetimi,<br /> Lisans, 2018
+                <p className="text-black">İstanbul, Kartal</p>
+                <p className="text-black whitespace-pre-line">
+                {texts[lang].licence}
                 </p>
-                <p className="text-black">Frontend, UI</p>
+                <p className="text-black">Frontend, UI, Backend</p>
               </div>
             </div>
           </div>
   
           <div className="flex flex-col gap-4 flex-1">
-            <h2 className="text-xl md:text-2xl font-semibold text-[#222]">About Me</h2>
+            <h2 className="text-xl md:text-2xl font-semibold text-[#222]">{texts[lang].about}</h2>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.
+            {texts[lang].aboutP1}
             </p>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              Minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!
+            {texts[lang].aboutP2}
             </p>
           </div>
         </div>
