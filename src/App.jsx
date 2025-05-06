@@ -16,9 +16,8 @@ function App() {
 
   return (
     <>
-      <div className={theme === 'dark' ? 'dark' : ''}>
-        <div className="dark:bg-[#252128] dark:[&_p]:text-white dark:[&_h2]:text-[#B7AAFF] 
-        dark:[&_h1]:text-[#AEBCCF] max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-20 pt-4 flex 
+      <div className={`${theme === 'dark' ? 'dark' : ''} dark:bg-[#252128] dark:[&_p]:text-white dark:[&_h2]:text-[#B7AAFF] dark:[&_h1]:text-[#AEBCCF]`}> 
+        <div className=" max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-20 pt-4 flex 
         flex-col gap-4 sm:gap-5">
           <DarkModeAndLanguage />
           <NavBar />
